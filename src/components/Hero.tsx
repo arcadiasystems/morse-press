@@ -57,6 +57,19 @@ function RunLog({ runLog }: { runLog: HeroJournal['runLog'] }) {
   )
 }
 
+/** The hero object, the press: two earlier issues behind the latest one, the run log, and the press bed under them. Also drawn on the share image (og/main.tsx). */
+export function Press() {
+  return (
+    <div className="press3d" role="group" aria-label={SAMPLE_JOURNAL.label}>
+      <div className="sheet s3" aria-hidden="true" />
+      <div className="sheet s2" aria-hidden="true" />
+      <Issue journal={SAMPLE_JOURNAL} />
+      <RunLog runLog={SAMPLE_JOURNAL.runLog} />
+      <div className="bed" aria-hidden="true" />
+    </div>
+  )
+}
+
 export function Hero() {
   return (
     <section className="hero" id="top">
@@ -87,14 +100,7 @@ export function Hero() {
             .
           </p>
         </div>
-        {/* The press: two earlier issues behind the latest one, the run log, and the press bed under them. */}
-        <div className="press3d" role="group" aria-label={SAMPLE_JOURNAL.label}>
-          <div className="sheet s3" aria-hidden="true" />
-          <div className="sheet s2" aria-hidden="true" />
-          <Issue journal={SAMPLE_JOURNAL} />
-          <RunLog runLog={SAMPLE_JOURNAL.runLog} />
-          <div className="bed" aria-hidden="true" />
-        </div>
+        <Press />
       </div>
     </section>
   )

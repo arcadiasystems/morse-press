@@ -1,0 +1,9 @@
+/* Morse Press: the hero's press on the share image, the latest issue over two
+   earlier ones, the agent's run log and the press bed. The press is laid out
+   at the width it has on the site and scaled to fit. The journal is invented,
+   so beside the sheet's own "Sample journal" line the card carries the
+   "Sample" pill under the run log, inside the square centre crop. */
+
+.og .glow{opacity:.14}
+.og .press3d{position:absolute;left:30px;top:98px;width:560px;height:520px;transform:scale(.92);transform-origin:0 0}
+.og__sample{position:absolute;left:30px;top:556px;font-size:12px}
