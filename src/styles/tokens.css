@@ -1,0 +1,5 @@
+/* Morse Press: the Vermilion palette. These are the tokens of base.css's
+   contract. Text on vermilion is dark (--on-acc), never white. Green (--ok) is
+   only for live and verified, amber (--warn) only for sample labels.
+   Ultramarine does not appear anywhere on this site. */
+:root{--bg:#0A0807;--bg-rgb:10,8,7;--panel-rgb:16,12,10;--dim:#C2BBB3;--mute:#9A9189;--acc:#FF5A36;--acc-rgb:255,90,54;--lift:#FF9E80;--lift-rgb:255,158,128;--tint-rgb:255,222,208;--em:var(--acc);--on-acc:#0A0807;--ok:#6FD3A6;--warn:#F0C96A}
